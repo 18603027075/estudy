@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/userCenter/userCenter",
+    "pages/lately/lately"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/homepage.png",
+        "iconPath": "images/homepage.png",
+        "pagePath": "pages/homepage/homepage",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/lately.png",
+        "iconPath": "images/lately.png",
+        "pagePath": "pages/lately/lately",
+        "text": "最近学习"
+      },
+      {
+        "selectedIconPath": "images/usercenter.png",
+        "iconPath": "images/usercenter.png",
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
