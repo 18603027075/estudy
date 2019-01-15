@@ -11,25 +11,25 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#a9b7b7",
-    "selectedColor": "#11cd6e",
+    "color": "#707070",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "list": [
       {
-        "selectedIconPath": "images/homepage.png",
-        "iconPath": "images/homepage.png",
+        "selectedIconPath": "images/homepage-p.png",
+        "iconPath": "images/homepage-n.png",
         "pagePath": "pages/homepage/homepage",
         "text": "首页"
       },
       {
-        "selectedIconPath": "images/lately.png",
-        "iconPath": "images/lately.png",
+        "selectedIconPath": "images/lately-p.png",
+        "iconPath": "images/lately-n.png",
         "pagePath": "pages/lately/lately",
         "text": "最近学习"
       },
       {
-        "selectedIconPath": "images/usercenter.png",
-        "iconPath": "images/usercenter.png",
+        "selectedIconPath": "images/usercenter-p.png",
+        "iconPath": "images/usercenter-n.png",
         "pagePath": "pages/userCenter/userCenter",
         "text": "个人中心"
       }
