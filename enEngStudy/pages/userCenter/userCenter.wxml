@@ -1,2 +1,38 @@
-<!--pages/userCenter/userCenter.wxml-->
-<text>pages/userCenter/userCenter.wxml</text>
+<!--pages/lately/lately.wxml-->
+<scroll-view scroll-y class='scroll' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+  <view class='scroll-view'>
+    <image class='image' src='../../images/default.png' />
+    <text class='text-level-1 mt-10'>菜头</text>
+
+
+    <view class='item-row mt-30' bindtap='jumpRecord' >
+      <text class='text-level-2' >兑换记录</text>
+      <image class='arrow' src='../../images/right-arrow.png'></image>
+    </view>
+    <view class='spe-line'></view>
+    <view class='item-row mt-30' bindtap='jumpEnjoy'>
+      <text class='text-level-2'>我的收藏</text>
+      <image class='arrow' src='../../images/right-arrow.png'></image>
+    </view>
+    <view class='spe-line'></view>
+    <view class='item-row mt-30' bindtap='jumpDownloaded'>
+      <text class='text-level-2'>已下载课件</text>
+      <image class='arrow' src='../../images/right-arrow.png'></image>
+    </view>
+    <view class='spe-line'></view>
+    <view class='item-row mt-30' bindtap='jumpManage'>
+      <text class='text-level-2'>管理员入口</text>
+      <image class='arrow' src='../../images/right-arrow.png'></image>
+    </view>
+    <view class='spe-line'></view>
+    <view class='item-row mt-30' bindtap='jumpHelper'>
+      <text class='text-level-2'>帮助中心</text>
+      <image class='arrow' src='../../images/right-arrow.png'></image>
+    </view>
+
+  </view>
+
+
+
+</scroll-view>

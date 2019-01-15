@@ -1,13 +1,16 @@
 {
   "pages": [
+    "pages/helper/helper",
     "pages/homepage/homepage",
+    "pages/productDetail/productDetail",
     "pages/userCenter/userCenter",
-    "pages/lately/lately"
+    "pages/lately/lately",
+    "pages/productlist/productlist",
+    "pages/manage/manage"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

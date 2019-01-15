@@ -1,0 +1,30 @@
+<!--pages/productDetail/productDetail.wxml-->
+<view class="container">
+    <view class="scroll-out">
+        <scroll-view scroll-y class='scroll' >
+
+            <view class='scroll-view' >
+                <image class='main-img' src="../../images/demo-detail.png"></image>
+
+                <view class="pro-row pl-10">
+                    <view>
+                        <text class="pro-text">{{product.price}}</text>
+                        <text class="pro-text-sub ml-10">积分</text>
+                    </view>
+                    <text class="bottom-btn-tx p10" bindtap="chargeNow">立即兑换</text>
+                </view>
+
+                <text class="text-level-1 p5">{{product.title}}</text>
+                <view class="product-field-row pl-10">
+                    <text class="text-level-3">{{product.time}}</text>
+                    <text class="text-level-3 ml-10">{{product.count}}人报名</text>
+                    <text class="text-level-3 ml-10">{{product.remarkCount}}人点评</text>
+                </view>
+
+                <image class="product-introduce" src="../../images/test.webp"></image>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+

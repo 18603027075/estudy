@@ -1,0 +1,10 @@
+<!--pages/helper/helper.wxml-->
+<view class='container'>
+  <scroll-view scroll-y class='scroll'>
+    <view class='scroll-content'></view>
+  </scroll-view>
+
+  <view class='bottom-layout'>
+    <text>send</text>
+  </view>
+</view>

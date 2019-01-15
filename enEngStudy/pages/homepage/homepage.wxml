@@ -1,3 +1,47 @@
 <!--pages/homepage.wxml-->
-<view></view>
-<text>pages/homepage.wxml</text>
+<view>
+  <!-- <view class='layout-row'>
+    <text class='{{mode==1 ? "cate-select" : "cate" }}' bindtap='setMode'>推荐</text>
+    <text class='{{mode==1 ? "cate" : "cate-select" }}' bindtap='setMode'>分类</text>
+  </view>
+  <view wx:if="{{mode==0}}" class='layout-row'>
+    <text class='{{cate == "all" ? "tab-select" : "tab"}}' bindtap='cateSelect'>全部</text>
+    <text class='{{cate == "eng" ? "tab-select" : "tab"}}' bindtap='cateSelect'>英语学习</text>
+    <text class='{{cate == "multi" ? "tab-select" : "tab"}}' bindtap='cateSelect'>多语种</text>
+  </view> -->
+  <text class='mt-20'>推荐专区</text>
+    <view  class='recommend-layout'>
+      <image class='recommend-img' src='{{recommends[0].image}}' bindtap='jumpDetail' data-id="{{recommends[0].productId}}"></image>
+       <image class='recommend-img' src='{{recommends[1].image}}' bindtap='jumpDetail' data-id="{{recommends[1].productId}}"></image>
+    </view>
+    <view  class='recommend-layout'>
+      <image class='recommend-img' src='{{recommends[2].image}}' bindtap='jumpDetail' data-id="{{recommends[2].productId}}"></image>
+       <image class='recommend-img' src='{{recommends[3].image}}' bindtap='jumpDetail' data-id="{{recommends[3].productId}}"></image>
+    </view>
+ 
+    <view  class='layout-row'>
+     <text class='mt-20'>分类</text>
+    <text class='{{cate == "all" ? "tab-select" : "tab"}}' bindtap='cateSelect'>全部</text>
+    <text class='{{cate == "eng" ? "tab-select" : "tab"}}' bindtap='cateSelect'>英语学习</text>
+    <text class='{{cate == "multi" ? "tab-select" : "tab"}}' bindtap='cateSelect'>多语种</text>
+  </view>
+
+  <scroll-view
+    scroll-y
+    class='scroll'
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+    <view class='scroll-item' wx:key="{{item.title+item.index}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item" bindtap='jumpDetail'>
+       <image class='scroll-item-img' src='{{item.image}}' ></image>
+       <view class='scroll-item-r'>
+          <text class='text-level-1'>{{item.name + index}}</text>
+          <text class='text-level-2'>{{item.team + index}}</text>
+          <text class='text-level-3'>{{item.count + index}}万次学习</text>
+       </view>
+    </view>
+  </scroll-view>
+</view>

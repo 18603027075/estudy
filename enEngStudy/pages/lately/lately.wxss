@@ -1,1 +1,27 @@
 /* pages/lately/lately.wxss */
+
+.scroll{
+  flex:1
+}
+
+.scroll-item{
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.scroll-item-img{
+  width: 140px;
+  height: 100px ;
+}
+
+.scroll-item-r{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  height: 95px ;
+  margin-left: 20px ;
+  width: 60%
+}
+

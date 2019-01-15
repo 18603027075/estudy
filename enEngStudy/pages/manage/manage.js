@@ -1,4 +1,4 @@
-// pages/userCenter/userCenter.js
+// pages/manage/manage.js
 Page({
 
   /**
@@ -7,32 +7,6 @@ Page({
   data: {
 
   },
-
-  jumpRecord(e){
-    wx.navigateTo({
-      url: '../productlist/productlist?type=record&title=兑换记录'
-    })
-  },
-  jumpEnjoy() {
-    wx.navigateTo({
-      url: '../productlist/productlist?type=Enjoy&title=我的收藏'
-    })
-  },
-  jumpDownloaded() {
-    wx.navigateTo({
-      url: '../productlist/productlist?type=downloaded&title=已下载课件'
-    })
-  },
-  jumpManage() { 
-    wx.navigateTo({
-      url: '../manage/manage'
-    })
-  },
-  jumpHelper() {
-    wx.navigateTo({
-      url: '../helper/helper'
-    })
-   },
 
   /**
    * 生命周期函数--监听页面加载

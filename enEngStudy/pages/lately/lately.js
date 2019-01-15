@@ -5,8 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items: [{
+      "name": "英语学习",
+      team: "商学院",
+      count: 1000,
+      image: "https://img.qlchat.com/qlLive/channelLogo/3K9K6KS7-N2HT-V9RU-1545632675596-VXWXOGGHKSN2.png?x-oss-process=image/resize,m_fill,limit_0,h_344,w_560"
+    },
+    {
+      "name": "英语学习",
+      team: "商学院",
+      count: 1000,
+      image: "https://img.qlchat.com/qlLive/channelLogo/3K9K6KS7-N2HT-V9RU-1545632675596-VXWXOGGHKSN2.png?x-oss-process=image/resize,m_fill,limit_0,h_344,w_560"
+    },
+    {
+      "name": "英语学习",
+      team: "商学院",
+      count: 1000,
+      image: "https://img.qlchat.com/qlLive/channelLogo/3K9K6KS7-N2HT-V9RU-1545632675596-VXWXOGGHKSN2.png?x-oss-process=image/resize,m_fill,limit_0,h_344,w_560"
+    },
+    {
+      "name": "英语学习",
+      team: "商学院",
+      count: 1000,
+      image: "https://img.qlchat.com/qlLive/channelLogo/3K9K6KS7-N2HT-V9RU-1545632675596-VXWXOGGHKSN2.png?x-oss-process=image/resize,m_fill,limit_0,h_344,w_560"
+    },
+    {
+      "name": "英语学习",
+      team: "商学院",
+      count: 1000,
+      image: "https://img.qlchat.com/qlLive/channelLogo/3K9K6KS7-N2HT-V9RU-1545632675596-VXWXOGGHKSN2.png?x-oss-process=image/resize,m_fill,limit_0,h_344,w_560"
+    },
+    ]
   },
+
+    jumpDetail(){
+        wx.navigateTo({
+            url: '../productDetail/productDetail',
+        })
+    },
 
   /**
    * 生命周期函数--监听页面加载
